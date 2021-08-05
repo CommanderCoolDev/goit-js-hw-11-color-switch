@@ -9,7 +9,7 @@ const colors = [
 
 const delayT = 1000;// задержка в мс (при 500 немного тормозит)
 
-let timeoutId = null;
+let timeoutId = null;// пустышка для работы с интервалом
 
 const randomIntegerFromInterval = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
