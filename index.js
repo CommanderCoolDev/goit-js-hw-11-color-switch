@@ -1,3 +1,9 @@
+const refs = {
+  btnStart: document.querySelector("body button[data-action='start']"),// старт кнопка
+  btnStop: document.querySelector("body button[data-action='stop']"),// стоп кнопка
+  myBody: document.querySelector("body"),// тело страницы,тут меняем цвет
+}; // массив ссылок
+
 const colors = [
   "#FFFFFF",
   "#2196F3",
@@ -15,11 +21,7 @@ const randomIntegerFromInterval = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
 };// функция из дз (дано)
 
-const refs = {
-  btnStart: document.querySelector("body button[data-action='start']"),// старт кнопка
-  btnStop: document.querySelector("body button[data-action='stop']"),// стоп кнопка
-  myBody: document.querySelector("body"),// тело страницы,тут меняем цвет
-}; // массив ссылок
+
 
 refs.btnStart.addEventListener("click", changeBackground);// прослушка при клике на старт + функция ,что происходит
 refs.btnStop.addEventListener("click", cancelBackground);// прослушка при клике на стоп + функция ,что происходит
